@@ -1,0 +1,56 @@
+<h2 mat-dialog-title>Add New Car</h2>
+<div mat-dialog-content>
+  <form #carForm="ngForm">
+    <mat-form-field>
+      <mat-label>Brand</mat-label>
+      <mat-select [(ngModel)]="car.brand" name="brand" required>
+        <mat-option value="Toyota">Toyota</mat-option>
+        <mat-option value="Honda">Honda</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Model</mat-label>
+      <input matInput [(ngModel)]="car.model" name="model" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Manufacturer</mat-label>
+      <input matInput [(ngModel)]="car.manufacturer" name="manufacturer" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Color</mat-label>
+      <input matInput [(ngModel)]="car.color" name="color" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Transmission</mat-label>
+      <input matInput [(ngModel)]="car.transmission" name="transmission" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Drivetrain</mat-label>
+      <input matInput [(ngModel)]="car.drivetrain" name="drivetrain" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Engine</mat-label>
+      <input matInput [(ngModel)]="car.engine" name="engine" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Year</mat-label>
+      <input matInput type="number" [(ngModel)]="car.year" name="year" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Price</mat-label>
+      <input matInput type="number" [(ngModel)]="car.price" name="price" required>
+    </mat-form-field>
+    <div class="form-buttons">
+      <button mat-button (click)="onCancel()">Cancel</button>
+      <button mat-button color="primary" (click)="onSubmit()" [disabled]="carForm.invalid">Submit</button>
+    </div>
+  </form>
+</div>

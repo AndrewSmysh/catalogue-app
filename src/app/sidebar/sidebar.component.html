@@ -1,0 +1,25 @@
+<div class="sidebar-content">
+  <label for="manufacturer">Manufacturer:</label>
+  <mat-form-field appearance="fill">
+    <mat-label>Manufacturer</mat-label>
+    <mat-select id="manufacturer" placeholder="Select" [(ngModel)]="selectedManufacturer">
+      <mat-option value="Toyota">Toyota</mat-option>
+      <mat-option value="Honda">Honda</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <label for="priceRange">Price Range:</label>
+  <input type="range" id="priceRange" min="0" max="100000" step="1000" [(ngModel)]="selectedPrice">
+  <output for="priceRange" id="priceOutput"> {{ selectedPrice | currency }}</output>
+  <mat-form-field appearance="fill">
+    <mat-label>Sort by</mat-label>
+    <mat-select id="sortField" placeholder="Select" [(ngModel)]="selectedField">
+      <mat-option value="manufacturer">Manufacturer</mat-option>
+      <mat-option value="year">Year</mat-option>
+      <mat-option value="color">Color</mat-option>
+      <mat-option value="engine">Engine</mat-option>
+      <mat-option value="price">Price</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="sortCars()">Sort Cars</button>
+
+</div>

@@ -1,0 +1,41 @@
+<form [formGroup]="carForm" class="edit-car-form">
+  <mat-form-field appearance="fill">
+    <mat-label>Brand</mat-label>
+    <input matInput formControlName="brand" required>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Model</mat-label>
+    <input matInput formControlName="model" required>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Year</mat-label>
+    <input matInput formControlName="year" required>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Transmission</mat-label>
+    <input matInput formControlName="transmission">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Drive Type</mat-label>
+    <input matInput formControlName="drivetrain">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Engine</mat-label>
+    <input matInput formControlName="engine">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Color</mat-label>
+    <input matInput formControlName="color">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Price</mat-label>
+    <input matInput formControlName="price">
+  </mat-form-field>
+  <div class="button-container">
+    <button mat-raised-button color="primary" class="edit-button" (click)="onEditClick()">Edit</button>
+    <button mat-raised-button color="primary" class="save-button" (click)="onSaveClick()">Save</button>
+    <button mat-raised-button color="warn" class="delete-button" (click)="onDeleteClick(model)">Delete</button>
+
+  </div>
+
+</form>

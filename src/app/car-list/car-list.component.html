@@ -1,0 +1,22 @@
+<div class="main-content">
+  <div class="car-card" *ngFor="let car of displayedCars" (click)="openEditCarDialog(car)">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ car.brand }} {{ car.model }}</mat-card-title>
+        <mat-card-subtitle>{{ car.year }} - {{ car.color }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Manufacturer: {{ car.manufacturer }}</p>
+        <p>Transmission: {{ car.transmission }}</p>
+        <p>Drive Type: {{ car.drivetrain }}</p>
+        <p>Engine: {{ car.engine }}</p>
+        <p>Price: ${{ car.price }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <button mat-fab class="add-button" (click)="openAddCarDialog()">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
+

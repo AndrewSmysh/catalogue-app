@@ -1,0 +1,12 @@
+.main-content {
+  position: relative;
+}
+
+.add-button {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+.car-card:hover {
+  border: 2px solid #007bff;
+}

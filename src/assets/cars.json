@@ -1,0 +1,48 @@
+[
+  {
+    "brand": "Toyota",
+    "model": "Camry",
+    "manufacturer": "Toyota",
+    "color": "Silver",
+    "transmission": "Automatic",
+    "drivetrain": "Front-Wheel Drive",
+    "engine": "2.4L",
+    "year": 2022,
+    "price": 20000,
+    "photo": "assets/images/1.jpeg"
+  },
+  {
+    "brand": "Honda",
+    "model": "Accord",
+    "manufacturer": "Honda",
+    "color": "Yellow",
+    "transmission": "Automatic",
+    "drivetrain": "Front-Wheel Drive",
+    "engine": "2L",
+    "year": 2014,
+    "price": 8000,
+    "photo": "assets/images/1.jpeg"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Land Cruiser",
+    "manufacturer": "Toyota",
+    "color": "Black",
+    "transmission": "Automatic",
+    "drivetrain": "Four-Wheel Drive",
+    "engine": "4.2l",
+    "year": 2013,
+    "price": 32000
+  },
+  {
+    "brand": "Toyota",
+    "model": "Supra A90",
+    "manufacturer": "Toyota",
+    "color": "Yellow",
+    "transmission": "Manual",
+    "drivetrain": "Front-Wheel Drive",
+    "engine": "3l",
+    "year": 2021,
+    "price": 90000
+  }
+]
